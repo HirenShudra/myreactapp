@@ -1,13 +1,75 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Mulish&family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #fff !important;
+}
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar a {
+  text-decoration: none !important;
+  font-size: 1.3rem !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a:hover {
+  color: black !important;
 }
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387 !important;
+}
+
+/* homepage css start */
+#header {
+  width: 100%;
+  height: 80vh;
+  font-weight: 700;
+  color: black;
+}
+#header .brand-name {
+  color: #565387;
+}
+#header h2 {
+  color: #484848;
+  font-size: 24px;
+}
+#header .header-img {
+  text-align: right;
+}
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* services css start */
+
+.card img {
+  height: 250px;
+}
+.card .card-title {
+  font-weight: 900;
+}
+
+
